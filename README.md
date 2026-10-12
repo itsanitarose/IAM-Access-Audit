@@ -1,2 +1,4 @@
-# IAM-Access-Review
-A fictional IAM case study reviewing user access risks, identifying security gaps, and recommending remediation and preventive controls for a healthcare organisation. Copy
+# IAM User Access Review | Northwind Health
+
+A fictional IAM case study for Northwind Health, a healthcare SaaS company handling sensitive patient data. The review identifies user-access gaps, assesses risks, prioritises remediation, and recommends practical controls to strengthen identity and access management.
+
