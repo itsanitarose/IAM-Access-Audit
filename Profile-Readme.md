@@ -1,7 +1,8 @@
 #   Anita Rose | Junior IAM Analyst | Cybersecurity
 
-I'm transitioning from customer service into cybersecurity, with a focus on Identity and Access Management (IAM). I'm developing practical skills in user access reviews, identity lifecycle management, access governance and risk assessment.
+Because in the age of AI, defence must be as smart as the threat.
 
+I'm transitioning from customer service into cybersecurity, focusing on Identity and Access Management (IAM), with a growing interest in AI security and risk. I'm developing practical skills through access reviews, identity governance, risk assessments and documented security projects.
 ## 📁 Featured Projects
 
 | Project | What it demonstrates |
