@@ -1,8 +1,7 @@
 # 02 — User Access Inventory
 
 **Project:** Northwind Health | IAM User Access Review
-**Document Reference:** IAM-DOC-02-UI
-**Review Date:** 5 October 2026
+
 
 ---
 
