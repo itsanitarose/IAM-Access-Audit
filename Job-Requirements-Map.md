@@ -4,9 +4,9 @@
 
 ## Overview
 
-This mapping matrix connects IAM responsibilities identified across five job descriptions from Gen II Fund Services, L&Q, Darktrace, SitusAMC and Paragon Banking Group to evidence produced in the Northwind Health access review.
+This project was developed by reverse-engineering common requirements found in entry-level and junior Identity and Access Management (IAM) job descriptions.
 
-The focus is on demonstrated IAM analysis, access governance, risk assessment and documentation skills.
+The matrix below connects industry job requirements to practical project deliverables, demonstrating skills in IAM analysis, access governance, risk assessment, and documentation.
 
 ## Skills & Requirements Mapping Matrix
 
