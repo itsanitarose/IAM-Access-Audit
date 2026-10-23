@@ -6,28 +6,15 @@ PowerShell automation for the Northwind Health IAM access review and remediation
 
 | Script | Purpose |
 |---|---|
-| `Invoke-AccessReview.ps1` | Reconcile HR records with Entra ID accounts, identify access risks, and export findings. |
-| `Invoke-Remediation.ps1` | Apply approved account and privilege changes, then verify the results. |
+| [Invoke-AccessReview.ps1](./Invoke-AccessReview.ps1) | Reconcile HR records with Entra ID identities, detect account and privilege discrepancies, assess access risks, and export findings for review. |
+| [Invoke-Remediation.ps1](./Invoke-Remediation.ps1) | Apply approved corrective actions to noncompliant accounts and excessive privileges, then verify the resulting identity and access states. |
 
 ## Workflow
 
 **Reconcile → Assess → Remediate → Verify**
 
-## Execution
-
-```powershell
-.\Invoke-AccessReview.ps1
-.\Invoke-Remediation.ps1
-```
-
 ## Requirements
 
 - PowerShell 7
 - Microsoft Graph PowerShell SDK
-- Appropriate Graph permissions and Entra ID administrative role
-
-## Evidence
-
-[Execution & Verification Screenshots](../screenshots/)
-
-[Access Review Documentation](../../../documents/)
+- Appropriate Microsoft Graph permissions and Microsoft Entra ID administrative privileges
