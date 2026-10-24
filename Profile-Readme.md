@@ -12,7 +12,7 @@ My focus is on strengthening my technical foundations and developing the skills 
 
 | Project | What it demonstrates |
 |---|---|
-| [Northwind Health — IAM User Access Review](https://github.com/itsanitarose/IAM-Access-Review) | HR-to-application access reconciliation, JML risk identification, privileged access review, risk prioritisation, remediation planning and executive reporting. |
+| [Northwind Health — IAM User Access Review](https://github.com/itsanitarose/IAM-Access-Review) |HR-to-identity access reconciliation, JML risk assessment, privileged access review, and risk-based remediation. Includes hands-on Microsoft Entra ID administration, Microsoft Graph PowerShell automation, and post-remediation verification. |
 
 ## 🛠️ Skills & Knowledge
 
