@@ -38,6 +38,7 @@ The available records do not confirm a data breach.
 | [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md) | Documents findings, severity and priorities |
 | [05 — Remediation and Preventive Controls](documents/05-Remediation-and-Preventive-Controls.md) | Recommends corrective actions and preventive controls |
 | [06 — Executive Summary](documents/06-Executive-Summary.md) | Summarises findings and recommendations for management |
+| [07 — Microsoft Entra ID Practical Lab](./02-Lab/Entra%20ID/) | PowerShell-based access reconciliation, remediation, and verification using Microsoft Entra ID. |
 | [Job Requirements Map](Job-Requirements-Map.md) | Links project evidence to IAM job requirements |
 
 ## IAM Skills Demonstrated
