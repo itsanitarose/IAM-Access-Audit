@@ -25,10 +25,4 @@ The matrix below connects industry job requirements to practical project deliver
 | Provision, modify and disable accounts through IAM systems. | Not demonstrated. The project recommends account changes but does not show their execution. | Practical IAM Administration — Not Yet Demonstrated |
 | Administer Active Directory, Microsoft Entra ID, IAM platforms and PowerShell. | Not demonstrated. The project does not include hands-on platform administration or scripting. | Technical IAM Tooling — Not Yet Demonstrated |
 
-## Value Demonstration
 
-The Northwind Health access review demonstrates the ability to reconcile identity records, identify access control weaknesses, assess and prioritise risks, and recommend practical remediation.
-
-The assessment distinguishes recorded evidence from matters requiring verification and considers the operational impact of proposed access changes.
-
-The project provides evidence of IAM analysis and governance skills, without representing live IAM administration or incident response experience.
