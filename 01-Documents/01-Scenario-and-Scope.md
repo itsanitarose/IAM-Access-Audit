@@ -1,52 +1,46 @@
-# 01 — Scenario and Scope
+# 01: Scenario and Scope
 
 **Project:** Northwind Health | IAM User Access Review  
-**Assessment Area:** Identity and Access Management (IAM)
+**Scenario date:** 5 October 2026
 
----
+## 1. The Request
 
-## 1. Business Context
+Northwind Health is a fictional, 120-person US healthcare SaaS company handling electronic protected health information (ePHI) for approximately 400 clinics.
 
-Northwind Health is a US-based healthcare SaaS provider supporting approximately 400 clinics with a workforce of 120 employees. The organisation handles electronic protected health information (ePHI), making secure access management essential to protecting patient information and maintaining business continuity.
+The manager requests a reconciliation of patient administration portal accounts against HR records:
 
-The access review focuses on potential weaknesses in employee and contractor offboarding, privileged access, shared accounts and account ownership.
+> “We've never properly reconciled the patient admin portal against HR. Here are both exports. Tell me what's wrong, what to fix first, and how we stop it happening again.”
 
 ## 2. Assessment Objectives
 
-The review aims to:
+- Identify inappropriate, excessive, or insufficiently justified access.
+- Prioritise findings by severity and potential business impact.
+- Recommend corrective actions and controls to prevent recurrence.
 
-- Identify inappropriate, excessive or insufficiently justified user access.
-- Assess security risks associated with account lifecycle and access governance.
-- Prioritise findings based on severity and potential business impact.
-- Recommend corrective actions and preventive IAM controls.
+## 3. Scope
 
-## 3. Scope of Review
+Review seven patient administration portal accounts against five supplied HR records, covering:
 
-Seven accounts were assessed against the supplied access records.
+- Employment status, contract end dates, and recorded login activity.
+- Assigned roles and business justification.
+- Account ownership, shared credentials, and credential storage.
+- Account inactivity and access requirements during extended leave.
 
-| Account | Review Focus |
+The technical work covers selected account and directory role changes in a Microsoft Entra ID test environment using Microsoft Graph PowerShell.
+
+Validation includes account-state checks, directory role membership checks, and a reconciliation rerun.
+
+## 4. Deliverables
+
+| Deliverable | Contents |
 |---|---|
-| `skim` | Post-termination login activity |
-| `treyes` | Contractor Admin access after contract end |
-| `testadmin` | Orphaned administrative account |
-| `support-shared` | Shared credentials and lack of accountability |
-| `lgrant` | Account inactivity during extended leave |
-| `pnair` | Finance access requiring business-need validation |
-| `dholt` | Admin privileges requiring justification |
-
-The assessment covers Joiner, Mover and Leaver (JML) processes, privileged access, least privilege, account ownership and periodic access reviews.
-
-## 4. Assessment Approach
-
-| Stage | Activity |
-|---|---|
-| **Review** | Examine account details, assigned roles, employment status and login activity. |
-| **Identify** | Highlight access discrepancies and control weaknesses. |
-| **Assess** | Evaluate severity, privilege level and potential business impact. |
-| **Prioritise** | Determine which findings require immediate attention. |
-| **Recommend** | Define remediation actions and preventive controls. |
-| **Report** | Present findings and recommendations to IT management. |
+| User Access Inventory | HR records, portal accounts, and reconciliation observations |
+| Access Risk Methodology | Criteria for severity and prioritisation |
+| Findings and Risk Register | Account issues, risks, severity, recommended actions, and first priority |
+| Remediation and Preventive Controls | Corrective actions, implementation status, and preventive recommendations |
+| Executive Summary | Findings and priorities for the IT manager, within 100 words |
+| Implementation and Test Evidence | PowerShell scripts, account and role verification, and reconciliation results |
 
 ---
 
-**Project Output:** A structured IAM access review supported by an account inventory, risk assessment, findings register, remediation plan and executive summary.
+[Back to Project Overview](../README.md)
