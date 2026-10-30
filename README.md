@@ -1,4 +1,4 @@
-# IAM User Access Review | Northwind Health
+# IAM User Access Audit | Northwind Health
 
 A fictional Identity and Access Management (IAM) case study focused on reviewing user access, identifying security risks and recommending improvements to access controls.
 
