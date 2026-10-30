@@ -1,9 +1,7 @@
 # IAM: The Access Audit
 
-**Scenario:** Northwind Health | Simulated IAM Analyst Assignment  
-**Date:** 5 October 2026
-
-*Part of my [Northwind Health | IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies) series.*
+**Scenario:** Northwind Health | [IAM Case Studies Series](https://github.com/itsanitarose/IAM-Case-Studies) ↗  
+**5 October 2026 · Fictional healthcare organisation**
 
 ## 🎫 The Ticket
 
@@ -20,7 +18,7 @@
 3. **Prevention:** Recommend a control or process improvement for each type of issue identified.
 4. **Management Summary:** Present the key findings and recommendations to the IT manager in no more than 100 words.
 
-*[View Original Ticket & Source Data](#)*
+*[View Project Documents & Source Materials](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents)*
 
 ## 🔎 My Approach & the Questions I Asked
 
@@ -36,15 +34,15 @@
 ## 📋 Work & Results
 
 **Assessment:** Complete  
-**Implementation:** In progress
+**Implementation:** Selected controls implemented and validated; two observations remain open.
 
-[Summarise the main findings, the highest-priority issue, and the actions recommended or completed. Distinguish clearly between completed remediation and outstanding work.]
+[Summarise the main findings, highest-priority issue, and actions recommended or completed.]
 
 | Document | Details |
 |---|---|
-| Findings & Recommendations | Identified risks, severity ratings, priorities, and recommended actions |
-| Preventive Controls | Proposed controls to address root causes and prevent recurrence |
-| Reflection & Next Steps | Outcomes, limitations, and outstanding actions |
+| [Findings & Recommendations](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Identified risks, severity ratings, priorities, and recommended actions |
+| [Preventive Controls](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Proposed measures to address root causes and prevent recurrence |
+| [Review & Next Steps](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Outcomes, limitations, and outstanding actions |
 
 ## ⚙️ Lab & Testing
 
@@ -52,8 +50,8 @@
 
 [Summarise the controls implemented or tested using Microsoft Entra ID and PowerShell. Explain what was verified and identify anything still awaiting validation.]
 
-**[Lab Walkthrough](#) · [PowerShell Scripts](#) · [Lab Results](#)**
+**[Lab Walkthrough](https://github.com/itsanitarose/IAM-Access-Review/tree/main/02-Lab/Entra%20ID) · [PowerShell & Testing](https://github.com/itsanitarose/IAM-Access-Review/tree/main/02-Lab/Entra%20ID) · [Lab Results](https://github.com/itsanitarose/IAM-Access-Review/tree/main/02-Lab/Entra%20ID)**
 
 ---
 
-[← GitHub Profile](https://github.com/itsanitarose) · [Northwind Health | IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies)
+[← GitHub Profile](https://github.com/itsanitarose) · [Northwind Health | IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies-Series)↗
