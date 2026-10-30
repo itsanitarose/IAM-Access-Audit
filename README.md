@@ -54,4 +54,4 @@
 
 ---
 
-[← GitHub Profile](https://github.com/itsanitarose) · [Northwind Health | IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies-Series)↗
+[← GitHub Profile](https://github.com/itsanitarose) · [Northwind Health | IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies) Series ↗
