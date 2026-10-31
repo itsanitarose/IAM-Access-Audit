@@ -22,21 +22,21 @@ It's my first week on the security team, and I've been handed my first ticket.
 
 I reviewed seven patient administration portal accounts against HR records, looking for access that no longer made sense.
 
-**Four questions guided my investigation:**
+**I worked through four questions:**
 
 **01. Does the account match HR records?**  
 I checked employment status, contract end dates and recent activity.
 
 **02. Is the access appropriate?**  
-I reviewed permissions, privileged access and shared credentials against job responsibilities.
+I reviewed permissions, admin access and shared credentials against job responsibilities.
 
 **03. What needs further investigation?**  
-I identified gaps in ownership, approval and business need, along with who could confirm them.
+I checked who owned each account, why it was needed, and who could confirm its access.
 
 **04. What happens next?**  
-I assessed the risks, prioritised findings and recommended corrective and preventive actions.
+I decided what needed attention first, what should change, and how to stop the same issues happening again.
 
-Throughout the review, I separated what the evidence confirmed from what still needed investigation.
+Throughout the review, I separated what the evidence showed from what still needed checking.
 
 ---
 
@@ -54,7 +54,7 @@ Throughout the review, I separated what the evidence confirmed from what still n
 
 The contractor's recorded end date was 31 July 2026, but an admin login occurred on 28 September 2026.
 
-I prioritised this account because its privileged access increased the potential impact.
+I put this account first because it had admin access, so misuse could cause more damage.
 
 **My recommendation:** Confirm whether the contract was extended. If no valid approval exists, disable the account and investigate the activity.
 
@@ -62,13 +62,19 @@ The records raise a serious concern, but they do not establish that a breach occ
 
 ---
 
+## Lab Outcome
+
+The access review is complete. I implemented and tested selected changes in Microsoft Entra ID.
+
+**[View Lab & Testing Evidence](./02-Lab/Entra%20ID/)**
+
+---
+
 ## What I Learned
 
-This review reinforced three things for me:
-
-- **Access needs continuous validation.** An active account doesn't necessarily mean its access is still appropriate.
-- **Evidence matters more than assumptions.** A suspicious login calls for investigation, not an immediate conclusion that a breach occurred.
-- **Prevention matters as much as remediation.** Fixing individual accounts is only part of the job. The process that allowed the issue needs attention too.
+- An account can still be active even when the person no longer needs access.
+- A login after someone's recorded leaving date needs investigating, but it doesn't prove a breach happened.
+- Fixing an account isn't enough. I also need to understand why the access was left in place and how to stop it happening again.
 
 ---
 
