@@ -1,48 +1,89 @@
-# IAM: The Access Review
+# IAM: The Access Audit
 
 ## The Scenario
 
-It’s my first week on the security team at Northwind Health, a fictional healthcare organisation supporting approximately 400 clinics and handling sensitive patient data (ePHI).
+Northwind Health is a fictional healthcare organisation supporting approximately 400 clinics and handling sensitive patient information (ePHI).
 
-My first task is to review access to the patient administration portal.
+It's my first week on the security team, and I've been handed my first ticket.
 
-Date of audit: 5 October 2026
+### 📁 The Ticket
 
-## 🎫 The Ticket
-
-**Manager's Request:**
+**IT Manager's Request:**
 
 > "We've never properly reconciled the patient admin portal against HR. Here are both exports. Tell me what's wrong, what to fix first, and how we stop it happening again."
 
-The task: Compare HR employment records with portal accounts, identify inappropriate access, and prioritise the risks.
+*Audit date: 5 October 2026*
 
-[View Source Materials](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents)
+**[View Source Materials](./01-Documents/)**
+
+---
 
 ## My Approach
 
-[Explain where you started, how you compared the records, and what needed confirmation before recommending action.]
+I reviewed seven patient administration portal accounts against HR records, looking for access that no longer made sense.
 
-## Findings & Recommendations
+**Four questions guided my investigation:**
 
-[Summarise the main findings, the highest-priority issue, and why it needed attention first. Include your recommended actions and preventive controls.]
+**01. Does the account match HR records?**  
+I checked employment status, contract end dates and recent activity.
 
-| Document | Details |
-|---|---|
-| [Findings & Recommendations](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Findings, risk ratings, priorities, and corrective actions |
-| [Preventive Controls](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Recommendations to address root causes and prevent recurrence |
-| [Lab & Testing](https://github.com/itsanitarose/IAM-Access-Review/tree/main/02-Lab/Entra%20ID) | Implementation, PowerShell scripts, and test evidence |
+**02. Is the access appropriate?**  
+I reviewed permissions, privileged access and shared credentials against job responsibilities.
 
+**03. What needs further investigation?**  
+I identified gaps in ownership, approval and business need, along with who could confirm them.
+
+**04. What happens next?**  
+I assessed the risks, prioritised findings and recommended corrective and preventive actions.
+
+Throughout the review, I separated what the evidence confirmed from what still needed investigation.
 
 ---
 
-Assessment: Complete  
-Implementation: Selected controls implemented and validated; two observations remain open.
+## Key Findings
 
-[Briefly state the two open observations and the next action for each.]
+| Severity | Accounts | Finding |
+|---|---:|---|
+| 🔴 Critical | 2 | Login activity after employment or contract end dates |
+| 🟠 High | 2 | Orphaned admin account and shared credentials |
+| 🟡 Medium | 2 | Extended leave and Finance access requiring review |
+| 🟢 Low | 1 | Engineering admin access requiring justification |
+| **Total** | **7** | |
+
+### Top Priority: `treyes`
+
+The contractor's recorded end date was 31 July 2026, but an admin login occurred on 28 September 2026.
+
+I prioritised this account because its privileged access increased the potential impact.
+
+**My recommendation:** Confirm whether the contract was extended. If no valid approval exists, disable the account and investigate the activity.
+
+The records raise a serious concern, but they do not establish that a breach occurred.
+
+---
 
 ## What I Learned
 
-[  ]  
+This review reinforced three things for me:
+
+- **Access needs continuous validation.** An active account doesn't necessarily mean its access is still appropriate.
+- **Evidence matters more than assumptions.** A suspicious login calls for investigation, not an immediate conclusion that a breach occurred.
+- **Prevention matters as much as remediation.** Fixing individual accounts is only part of the job. The process that allowed the issue needs attention too.
+
 ---
 
-[← GitHub Profile](https://github.com/itsanitarose) · [IAM Case Studies Series ↗](https://github.com/itsanitarose/IAM-Case-Studies)
+## Supporting Documents
+
+| Document | What's Inside |
+|---|---|
+| [01. Scenario & Scope](./01-Documents/) | The request and review boundaries |
+| [02. Access Inventory](./01-Documents/) | HR and portal account comparison |
+| [03. Risk Methodology](./01-Documents/) | How severity was assessed |
+| [04. Findings & Risk Register](./01-Documents/) | Evidence, ratings and priorities |
+| [05. Remediation & Prevention](./01-Documents/) | Recommended actions and controls |
+| [06. Executive Summary](./01-Documents/) | Management-facing conclusions |
+| [07. Entra ID Lab](./02-Lab/Entra%20ID/) | PowerShell, access changes and verification |
+
+---
+
+[Job Requirements Map](./Job-Requirements-Map.md) | [Back to IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies) | [GitHub Profile](https://github.com/itsanitarose)
