@@ -1,32 +1,34 @@
-# 03 — Access Risk Assessment Methodology
+# 03. Preventive Controls
 
-**Case Study:** Northwind Health | IAM User Access Review       
-**Scenario date:** 5 October 2026
+Case study: Northwind Health | IAM User Access Review  
+Date: 5 October 2026
 
+## Prevention
+
+### 1. Leavers and Contractors (Sarah and Tom)
+
+I would link HR leaving dates to account deactivation so access ends when someone leaves or their contract expires. Any contract extension would need written approval before access continues.
+
+### 2. Admin Access (Dan)
+
+I would require a clear reason and manager approval for Admin access. Regular reviews would check whether that level of access is still needed.
+
+### 3. Shared Accounts (support-shared)
+
+I would give each person their own account so their activity can be traced back to them. If a shared account is necessary, it should have approval, limited permissions, a securely stored password, and checks on how it is used.
+
+### 4. Accounts Without a Confirmed Owner (testadmin)
+
+I would keep a record of who is responsible for each account, why it is needed, and when it was last reviewed. If an account has no confirmed owner or purpose, I would investigate and disable it if it is no longer needed.
+
+### 5. Extended Leave (Lisa)
+
+I would ask HR and the employee’s manager to agree what access is needed during leave. Access could be kept, paused, or reduced depending on the circumstances, then checked again when the employee returns.
+
+### 6. Business Need for Access (Priya)
+
+I would ask managers and the people responsible for each system to review access regularly and confirm that it still fits the person’s job. Access that is no longer needed would be removed.
 
 ---
 
-## 1. Risk Assessment Approach
-
-The IAM access review applies a qualitative, risk-based methodology to assess discrepancies identified through reconciliation of HR records and patient administration portal access.
-
-The assessment considers account status, assigned privileges, access accountability and potential business impact to determine the appropriate severity and response priority.
-
-## 2. Risk Assessment Criteria
-
-| Assessment Factor | Evaluation Criteria |
-|---|---|
-| Employment Status | Alignment between employment or contract dates and recorded account activity. |
-| Privilege Level | Level of access assigned, including Admin, Support Agent and read-only roles. |
-| Account Accountability | Whether the account has an identifiable user or accountable owner. |
-| Business Justification | Whether access permissions are appropriate and supported by an operational need. |
-| Potential Impact | Possible consequences for patient information, security and business operations. |
-
-## 3. Risk Severity Classification
-
-| Severity | Definition | Response Priority |
-|---|---|---|
-| **Critical** | Potentially unauthorised access following employment or contract termination, particularly where privileged access increases exposure. | Immediate verification and appropriate escalation. |
-| **High** | Significant access governance weaknesses involving elevated privileges, shared credentials or unclear account ownership. | Prompt investigation and corrective action. |
-| **Medium** | Access conditions requiring further validation against business needs or organisational policy. | Scheduled review and proportionate corrective action. |
-| **Low** | No significant discrepancy identified from the available records. | Routine monitoring and periodic access certification. |
+[Back to Overview](../README.md)
