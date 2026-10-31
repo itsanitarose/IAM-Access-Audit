@@ -74,15 +74,11 @@ This review reinforced three things for me:
 
 ## Supporting Documents
 
-| Document | What's Inside |
+| Document | Details |
 |---|---|
-| [01. Scenario & Scope](./01-Documents/) | The request and review boundaries |
-| [02. Access Inventory](./01-Documents/) | HR and portal account comparison |
-| [03. Risk Methodology](./01-Documents/) | How severity was assessed |
-| [04. Findings & Risk Register](./01-Documents/) | Evidence, ratings and priorities |
-| [05. Remediation & Prevention](./01-Documents/) | Recommended actions and controls |
-| [06. Executive Summary](./01-Documents/) | Management-facing conclusions |
-| [07. Entra ID Lab](./02-Lab/Entra%20ID/) | PowerShell, access changes and verification |
+| [Findings & Recommendations](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Findings, risk ratings, priorities, and corrective actions |
+| [Preventive Controls](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Root causes and recommendations to prevent recurrence |
+| [Lab & Testing](https://github.com/itsanitarose/IAM-Access-Review/tree/main/02-Lab/Entra%20ID) | Entra ID changes, PowerShell scripts, and test evidence |
 
 ---
 
