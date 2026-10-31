@@ -1,4 +1,4 @@
-# Microsoft Entra ID — Access Review Lab
+# Microsoft Entra ID: Access Review Lab
 
 Implementation of the Northwind Health IAM access review using Microsoft Entra ID and Microsoft Graph PowerShell.
 
