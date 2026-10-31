@@ -1,7 +1,8 @@
 # 02: User Access Inventory
 
-**Project:** Northwind Health | IAM User Access Review  
+**Case Study:** Northwind Health | IAM User Access Audit  
 **Scenario date:** 5 October 2026
+
 
 ## 1. Access Reconciliation Overview
 
