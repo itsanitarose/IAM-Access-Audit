@@ -1,8 +1,8 @@
 # 03 — Access Risk Assessment Methodology
 
-**Project:** Northwind Health | IAM User Access Review  
-**Document Reference:** IAM-DOC-03-RM  
-**Review Date:** 5 October 2026
+**Case Study:** Northwind Health | IAM User Access Audit  
+**Scenario date:** 5 October 2026
+
 
 ---
 
