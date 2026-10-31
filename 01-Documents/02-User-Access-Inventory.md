@@ -1,4 +1,4 @@
-# 02: Findings & Recommendations
+# 02. Findings & Recommendations
 
 Case study: Northwind Health | IAM User Access Review  
 Date: 5 October 2026
