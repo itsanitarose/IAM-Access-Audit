@@ -1,8 +1,8 @@
 # 04 — Access Findings and Risk Register
 
-**Project:** Northwind Health | IAM User Access Review  
-**Document Reference:** IAM-DOC-04-RR  
-**Review Date:** 5 October 2026
+**Case Study:** Northwind Health | IAM User Access Audit  
+**Scenario date:** 5 October 2026
+
 
 ---
 
