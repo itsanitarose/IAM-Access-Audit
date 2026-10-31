@@ -1,46 +1,32 @@
-# 01: Scenario and Scope
+# 01. Source Data
 
-**Case Study:** Northwind Health | IAM User Access Review       
-**Scenario date:** 5 October 2026
+**Case Study:** Northwind Health | IAM User Access Review  
+**Date:** 5 October 2026
 
-## 1. The Request
+## 1. HR Records
 
-Northwind Health is a fictional, 120-person US healthcare SaaS company handling electronic protected health information (ePHI) for approximately 400 clinics.
+| Employee / Contractor | ID | Status | End Date | Department |
+|---|---|---|---|---|
+| Sarah Kim | E1021 | Terminated | 15 Aug 2026 | Customer Success |
+| Tom Reyes | C3004 | Contractor | 31 Jul 2026 | Engineering |
+| Priya Nair | E1033 | Active | Not provided | Finance |
+| Dan Holt | E1040 | Active | Not provided | Engineering |
+| Lisa Grant | E1052 | Active, on leave since May | Not provided | HR |
 
-The manager requests a reconciliation of patient administration portal accounts against HR records:
+## 2. Patient Administration Portal Export
 
-> “We've never properly reconciled the patient admin portal against HR. Here are both exports. Tell me what's wrong, what to fix first, and how we stop it happening again.”
-
-## 2. Assessment Objectives
-
-- Identify inappropriate, excessive, or insufficiently justified access.
-- Prioritise findings by severity and potential business impact.
-- Recommend corrective actions and controls to prevent recurrence.
-
-## 3. Scope
-
-Review seven patient administration portal accounts against five supplied HR records, covering:
-
-- Employment status, contract end dates, and recorded login activity.
-- Assigned roles and business justification.
-- Account ownership, shared credentials, and credential storage.
-- Account inactivity and access requirements during extended leave.
-
-The technical work covers selected account and directory role changes in a Microsoft Entra ID test environment using Microsoft Graph PowerShell.
-
-Validation includes account-state checks, directory role membership checks, and a reconciliation rerun.
-
-## 4. Deliverables
-
-| Deliverable | Contents |
-|---|---|
-| User Access Inventory | HR records, portal accounts, and reconciliation observations |
-| Access Risk Methodology | Criteria for severity and prioritisation |
-| Findings and Risk Register | Account issues, risks, severity, recommended actions, and first priority |
-| Remediation and Preventive Controls | Corrective actions, implementation status, and preventive recommendations |
-| Executive Summary | Findings and priorities for the IT manager, within 100 words |
-| Implementation and Test Evidence | PowerShell scripts, account and role verification, and reconciliation results |
+| Username | Assigned Role | Last Login | Account Notes |
+|---|---|---|---|
+| `skim` | Support Agent | 2 Sep 2026 | None provided |
+| `treyes` | Admin | 28 Sep 2026 | None provided |
+| `pnair` | Read-only | 1 Oct 2026 | None provided |
+| `dholt` | Admin | 2 Oct 2026 | None provided |
+| `lgrant` | Support Agent | 11 May 2026 | None provided |
+| `support-shared` | Support Agent | 3 Oct 2026 | Shared login; password stored in team wiki |
+| `testadmin` | Admin | 20 Nov 2025 | Created by an engineer who has since left |
 
 ---
+
+**Evidence note:** These are the supplied fictional HR and portal records. Missing information has not been filled in or assumed.
 
 [Back to Project Overview](../README.md)
