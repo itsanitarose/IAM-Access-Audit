@@ -1,7 +1,6 @@
 # 01. Source Data
 
-**Case Study:** Northwind Health | IAM User Access Review  
-**Date:** 5 October 2026
+
 
 ## 1. HR Records
 
