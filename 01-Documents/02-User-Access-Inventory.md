@@ -1,55 +1,66 @@
-# 02: User Access Inventory
+# 02: Findings & Recommendations
 
-**Case Study:** Northwind Health | IAM User Access Review       
-**Scenario date:** 5 October 2026
+Case study: Northwind Health | IAM User Access Review  
+Date: 5 October 2026
 
-
-## 1. Access Reconciliation Overview
-
-This review compares the supplied HR records with patient administration portal accounts to identify mismatches between employment status and system access.
-
-It covers five named users and two additional portal accounts.
-
-## 2. HR Records
-
-| Employee / Contractor | ID | Status | End Date | Department |
-|---|---|---|---|---|
-| Sarah Kim | E1021 | Terminated | 15 Aug 2026 | Customer Success |
-| Tom Reyes | C3004 | Contractor | 31 Jul 2026 | Engineering |
-| Priya Nair | E1033 | Active | Not provided | Finance |
-| Dan Holt | E1040 | Active | Not provided | Engineering |
-| Lisa Grant | E1052 | Active, on leave since May | Not provided | HR |
-
-## 3. Patient Administration Portal Accounts
-
-| Username | Assigned Role | Last Login | Account Notes |
-|---|---|---|---|
-| `skim` | Support Agent | 2 Sep 2026 | None provided |
-| `treyes` | Admin | 28 Sep 2026 | None provided |
-| `pnair` | Read-only | 1 Oct 2026 | None provided |
-| `dholt` | Admin | 2 Oct 2026 | None provided |
-| `lgrant` | Support Agent | 11 May 2026 | None provided |
-| `support-shared` | Support Agent | 3 Oct 2026 | Shared login; password stored in team wiki |
-| `testadmin` | Admin | 20 Nov 2025 | Created by an engineer who has since left |
-
-## 4. Reconciliation Results
+## 1. What I Found
 
 | Account | Observation |
 |---|---|
-| `skim` | Employee terminated on 15 Aug; portal login recorded on 2 Sep |
-| `treyes` | Contract ended on 31 Jul; Admin login recorded on 28 Sep; contract extension requires confirmation |
-| `testadmin` | Orphaned Admin account created by an engineer who has left; last login recorded on 20 Nov 2025 |
-| `support-shared` | Shared login with its password stored in a team wiki; actions cannot be reliably attributed to an individual |
-| `lgrant` | Employee on extended leave; no recorded login since 11 May |
-| `pnair` | Finance employee with read-only patient administration portal access; business need requires confirmation |
-| `dholt` | Engineering employee with Admin access; justification requires confirmation and documentation |
+| skim | Employment ended on 15 August, but a login was recorded on 2 September. |
+| treyes | Contract ended on 31 July, but an Admin login was recorded on 28 September. A contract extension needs confirming. |
+| testadmin | Admin account created by an engineer who has since left, with no confirmed owner. Last login: 20 November 2025. |
+| support-shared | Shared account with its password stored in a team wiki. The account alone does not show who performed an action. |
+| lgrant | Employee on extended leave. No login recorded since 11 May. |
+| pnair | Finance employee with read-only portal access. The reason for this access needs confirming. |
+| dholt | Engineering employee with Admin access. The reason for this access needs confirming and documenting. |
 
-## 5. Inventory Summary
+## 2. Risk Ratings & Recommended Actions
 
-Seven accounts require action or confirmation across offboarding, contractor expiry, orphaned accounts, shared credentials, extended leave, and access justification.
+These ratings reflect the information available. Some accounts need further checks before deciding whether access should change.
 
-Severity ratings, priorities, and corrective actions are recorded in the [Findings and Risk Register](04-Access-Findings-and-Risk-Register.md).
+| Account | Severity | Recommended action |
+|---|---|---|
+| skim | 🔴 Critical | Disable the account if still active and investigate the login after termination. |
+| treyes | 🔴 Critical | Confirm whether the contract was extended. If no valid authorisation exists, disable access and investigate the login. |
+| testadmin | 🟠 High | Confirm who owns the account and whether it is needed. Disable it if no valid owner or purpose can be established. |
+| support-shared | 🟠 High | Rotate the password, remove it from the wiki, and move users to individual accounts before retiring the shared login. |
+| lgrant | 🟡 Medium | Confirm the leave arrangements and whether access is needed while the employee is away. |
+| pnair | 🟡 Medium | Confirm why portal access is needed. Remove it if there is no valid business reason. |
+| dholt | 🟢 Low | Confirm and document why Admin access is needed. Reduce permissions if that level of access is unnecessary. |
+
+## 3. How I Rated the Risks
+
+I considered how likely the access was to be misused and how much harm that could cause, including the permissions involved and the sensitivity of patient data. My approach was informed by the [OWASP Risk Rating Methodology](https://community.owasp.org/OWASP_Risk_Rating_Methodology).
+
+## 4. What Needs Attention First
+
+### First Priority: treyes
+
+The recorded contract end date was 31 July 2026, but an Admin login occurred on 28 September.
+
+I put this account first because it had Admin access, so misuse could cause more damage.
+
+Recommended next steps:
+
+1. Confirm whether the contract was extended.
+2. Check whether Admin access is still authorised.
+3. If no valid authorisation exists, disable access and investigate the activity.
+
+### Also Critical: skim
+
+The employee left on 15 August 2026, but a login was recorded on 2 September.
+
+Recommended next steps:
+
+1. Check whether the account is still active.
+2. Disable it if it remains active.
+3. Investigate the login after termination.
+
+### What the Records Don’t Tell Us
+
+These logins need investigating, but they do not prove who used the accounts, whether patient information was accessed, or whether a breach occurred.
 
 ---
 
-[Back to Project Overview](../README.md)
+[Back to Overview](../README.md)
