@@ -1,6 +1,6 @@
 # 01: Scenario and Scope
 
-**Project:** Northwind Health | IAM User Access Review  
+**Case Study:** Northwind Health | IAM User Access Audit  
 **Scenario date:** 5 October 2026
 
 ## 1. The Request
