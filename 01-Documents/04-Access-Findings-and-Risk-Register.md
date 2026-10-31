@@ -1,7 +1,5 @@
 # 04. Summary for the IT Manager
 
-**Case Study:** Northwind Health | IAM User Access Review  
-**Date:** 5 October 2026
 
 ## Summary for the IT Manager
 
