@@ -1,6 +1,6 @@
 # 06 — Executive Summary
 
-**Case Study:** Northwind Health | IAM User Access Audit  
+**Case Study:** Northwind Health | IAM User Access Review       
 **Scenario date:** 5 October 2026
 
 ---
