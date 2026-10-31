@@ -1,60 +1,55 @@
-# 02 — User Access Inventory
+# 02: User Access Inventory
 
-**Project:** Northwind Health | IAM User Access Review
+**Case Study:** Northwind Health | IAM User Access Review       
+**Scenario date:** 5 October 2026
 
-
----
 
 ## 1. Access Reconciliation Overview
 
-The review compares Northwind Health's HR export with its patient administration portal user list to identify discrepancies between workforce status and application access.
+This review compares the supplied HR records with patient administration portal accounts to identify mismatches between employment status and system access.
 
-The reconciliation covers five named users and two additional application accounts.
+It covers five named users and two additional portal accounts.
 
 ## 2. HR Records
 
-| Employee / Contractor | ID    | Status                      | End Date    | Department       |
-| --------------------- | ----- | --------------------------- | ----------- | ---------------- |
-| Sarah Kim             | E1021 | Terminated                  | 15 Aug 2026 | Customer Success |
-| Tom Reyes             | C3004 | Contractor                  | 31 Jul 2026 | Engineering      |
-| Priya Nair            | E1033 | Active                      | —           | Finance          |
-| Dan Holt              | E1040 | Active                      | —           | Engineering      |
-| Lisa Grant            | E1052 | Active — on leave since May | —           | HR               |
+| Employee / Contractor | ID | Status | End Date | Department |
+|---|---|---|---|---|
+| Sarah Kim | E1021 | Terminated | 15 Aug 2026 | Customer Success |
+| Tom Reyes | C3004 | Contractor | 31 Jul 2026 | Engineering |
+| Priya Nair | E1033 | Active | Not provided | Finance |
+| Dan Holt | E1040 | Active | Not provided | Engineering |
+| Lisa Grant | E1052 | Active, on leave since May | Not provided | HR |
 
-## 3. Patient Admin Portal Access Register
+## 3. Patient Administration Portal Accounts
 
-| Username         | Assigned Role | Last Login  | Account Notes                              |
-| ---------------- | ------------- | ----------- | ------------------------------------------ |
-| `skim`           | Support Agent | 2 Sep 2026  | —                                          |
-| `treyes`         | Admin         | 28 Sep 2026 | —                                          |
-| `pnair`          | Read-only     | 1 Oct 2026  | —                                          |
-| `dholt`          | Admin         | 2 Oct 2026  | —                                          |
-| `lgrant`         | Support Agent | 11 May 2026 | —                                          |
-| `support-shared` | Support Agent | 3 Oct 2026  | Shared login; password stored in team wiki |
-| `testadmin`      | Admin         | 20 Nov 2025 | Created by an engineer who has since left  |
+| Username | Assigned Role | Last Login | Account Notes |
+|---|---|---|---|
+| `skim` | Support Agent | 2 Sep 2026 | None provided |
+| `treyes` | Admin | 28 Sep 2026 | None provided |
+| `pnair` | Read-only | 1 Oct 2026 | None provided |
+| `dholt` | Admin | 2 Oct 2026 | None provided |
+| `lgrant` | Support Agent | 11 May 2026 | None provided |
+| `support-shared` | Support Agent | 3 Oct 2026 | Shared login; password stored in team wiki |
+| `testadmin` | Admin | 20 Nov 2025 | Created by an engineer who has since left |
 
 ## 4. Reconciliation Results
 
-| Account          | HR / Portal Comparison                            | Review Observation                                     |
-| ---------------- | ------------------------------------------------- | ------------------------------------------------------ |
-| `skim`           | Terminated 15 Aug; portal login 2 Sep             | Post-termination activity                              |
-| `treyes`         | Contract end 31 Jul; Admin login 28 Sep           | Post-contract-end privileged activity                  |
-| `pnair`          | Active Finance employee; read-only role           | Access requires routine validation                     |
-| `dholt`          | Active Engineering employee; Admin role           | Privileged access justification requires review        |
-| `lgrant`         | Active employee on leave; last login 11 May       | Leave-of-absence access review                         |
-| `support-shared` | No individual HR identity associated with account | Shared access and credential accountability concern    |
-| `testadmin`      | Account creator has departed                      | Account ownership and continued purpose require review |
+| Account | Observation |
+|---|---|
+| `skim` | Employee terminated on 15 Aug; portal login recorded on 2 Sep |
+| `treyes` | Contract ended on 31 Jul; Admin login recorded on 28 Sep; contract extension requires confirmation |
+| `testadmin` | Orphaned Admin account created by an engineer who has left; last login recorded on 20 Nov 2025 |
+| `support-shared` | Shared login with its password stored in a team wiki; actions cannot be reliably attributed to an individual |
+| `lgrant` | Employee on extended leave; no recorded login since 11 May |
+| `pnair` | Finance employee with read-only patient administration portal access; business need requires confirmation |
+| `dholt` | Engineering employee with Admin access; justification requires confirmation and documentation |
 
 ## 5. Inventory Summary
 
-The reconciliation identifies access governance concerns involving:
+Seven accounts require action or confirmation across offboarding, contractor expiry, orphaned accounts, shared credentials, extended leave, and access justification.
 
-- **Offboarding:** Login activity recorded after employment or contract end dates.
-- **Privileged access:** Admin accounts requiring business justification and ownership validation.
-- **Account accountability:** Shared credentials and an administrative account linked to a departed creator.
-- **Access recertification:** Review of access appropriateness for active employees, including leave arrangements.
-
-These observations form the evidence base for the access risk assessment and findings register.
+Severity ratings, priorities, and corrective actions are recorded in the [Findings and Risk Register](04-Access-Findings-and-Risk-Register.md).
 
 ---
 
+[Back to Project Overview](../README.md)

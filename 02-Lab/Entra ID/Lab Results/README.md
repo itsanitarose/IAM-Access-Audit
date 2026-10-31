@@ -1,3 +1,3 @@
-# Access Review Screenshots
+# Access Review — Lab Results
 
-Visual evidence of the Northwind Health IAM access review, including initial findings, remediation, and post-remediation verification.
+Before-and-after results from the Northwind Health IAM access review, showing identified risks, remediation actions, and post-remediation verification.

@@ -1,52 +1,32 @@
-# 01 — Scenario and Scope
+# 01. Source Data
 
-**Project:** Northwind Health | IAM User Access Review  
-**Assessment Area:** Identity and Access Management (IAM)
+**Case Study:** Northwind Health | IAM User Access Review  
+**Date:** 5 October 2026
 
----
+## 1. HR Records
 
-## 1. Business Context
+| Employee / Contractor | ID | Status | End Date | Department |
+|---|---|---|---|---|
+| Sarah Kim | E1021 | Terminated | 15 Aug 2026 | Customer Success |
+| Tom Reyes | C3004 | Contractor | 31 Jul 2026 | Engineering |
+| Priya Nair | E1033 | Active | Not provided | Finance |
+| Dan Holt | E1040 | Active | Not provided | Engineering |
+| Lisa Grant | E1052 | Active, on leave since May | Not provided | HR |
 
-Northwind Health is a US-based healthcare SaaS provider supporting approximately 400 clinics with a workforce of 120 employees. The organisation handles electronic protected health information (ePHI), making secure access management essential to protecting patient information and maintaining business continuity.
+## 2. Patient Administration Portal Export
 
-The access review focuses on potential weaknesses in employee and contractor offboarding, privileged access, shared accounts and account ownership.
-
-## 2. Assessment Objectives
-
-The review aims to:
-
-- Identify inappropriate, excessive or insufficiently justified user access.
-- Assess security risks associated with account lifecycle and access governance.
-- Prioritise findings based on severity and potential business impact.
-- Recommend corrective actions and preventive IAM controls.
-
-## 3. Scope of Review
-
-Seven accounts were assessed against the supplied access records.
-
-| Account | Review Focus |
-|---|---|
-| `skim` | Post-termination login activity |
-| `treyes` | Contractor Admin access after contract end |
-| `testadmin` | Orphaned administrative account |
-| `support-shared` | Shared credentials and lack of accountability |
-| `lgrant` | Account inactivity during extended leave |
-| `pnair` | Finance access requiring business-need validation |
-| `dholt` | Admin privileges requiring justification |
-
-The assessment covers Joiner, Mover and Leaver (JML) processes, privileged access, least privilege, account ownership and periodic access reviews.
-
-## 4. Assessment Approach
-
-| Stage | Activity |
-|---|---|
-| **Review** | Examine account details, assigned roles, employment status and login activity. |
-| **Identify** | Highlight access discrepancies and control weaknesses. |
-| **Assess** | Evaluate severity, privilege level and potential business impact. |
-| **Prioritise** | Determine which findings require immediate attention. |
-| **Recommend** | Define remediation actions and preventive controls. |
-| **Report** | Present findings and recommendations to IT management. |
+| Username | Assigned Role | Last Login | Account Notes |
+|---|---|---|---|
+| `skim` | Support Agent | 2 Sep 2026 | None provided |
+| `treyes` | Admin | 28 Sep 2026 | None provided |
+| `pnair` | Read-only | 1 Oct 2026 | None provided |
+| `dholt` | Admin | 2 Oct 2026 | None provided |
+| `lgrant` | Support Agent | 11 May 2026 | None provided |
+| `support-shared` | Support Agent | 3 Oct 2026 | Shared login; password stored in team wiki |
+| `testadmin` | Admin | 20 Nov 2025 | Created by an engineer who has since left |
 
 ---
 
-**Project Output:** A structured IAM access review supported by an account inventory, risk assessment, findings register, remediation plan and executive summary.
+**Evidence note:** These are the supplied fictional HR and portal records. Missing information has not been filled in or assumed.
+
+[Back to Project Overview](../README.md)

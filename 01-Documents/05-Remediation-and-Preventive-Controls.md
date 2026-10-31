@@ -1,8 +1,8 @@
 # 05 — Remediation and Preventive Controls
 
-**Project:** Northwind Health | IAM User Access Review  
-**Document Reference:** IAM-DOC-05-RC  
-**Review Date:** 5 October 2026
+**Case Study:** Northwind Health | IAM User Access Review       
+**Scenario date:** 5 October 2026
+
 
 ---
 

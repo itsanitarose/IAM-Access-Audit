@@ -1,8 +1,7 @@
 # 06 — Executive Summary
 
-**Project:** Northwind Health | IAM User Access Review  
-**Document Reference:** IAM-DOC-06-ES  
-**Review Date:** 5 October 2026
+**Case Study:** Northwind Health | IAM User Access Review       
+**Scenario date:** 5 October 2026
 
 ---
 

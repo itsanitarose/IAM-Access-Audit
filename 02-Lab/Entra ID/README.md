@@ -1,8 +1,10 @@
-# Microsoft Entra ID — Access Review Evidence
+# Microsoft Entra ID — Access Audit Lab
 
-This folder contains PowerShell scripts, HR reference data,
-access review findings, and screenshots documenting the
-Northwind Health IAM access review.
+Hands-on implementation of the Northwind Health IAM access review using Microsoft Entra ID and Microsoft Graph PowerShell.
 
-Evidence is organised to show the environment before
-remediation, the changes performed, and verification afterward.
+## Lab Components
+
+| Component | Purpose |
+|---|---|
+| [PowerShell](./PowerShell/) | Scripts for access reconciliation, approved remediation and verification. |
+| [Lab Results](./Lab%20Results/) | Before-and-after results documenting identified risks, corrective actions and verification. |
