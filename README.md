@@ -85,10 +85,12 @@ As a result, I began to see IAM as more than simply granting or removing access.
 
 | Document | Details |
 |---|---|
-| [Findings & Recommendations](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Findings, risk ratings, priorities, and corrective actions |
-| [Preventive Controls](https://github.com/itsanitarose/IAM-Access-Review/tree/main/01-Documents) | Root causes and recommendations to prevent recurrence |
-| [Lab & Testing](https://github.com/itsanitarose/IAM-Access-Review/tree/main/02-Lab/Entra%20ID) | Entra ID changes, PowerShell scripts, and test evidence |
+| [Source Data](./01-Documents/01.%20Source%20Data.md) | Original HR records and patient portal export |
+| [Findings & Recommendations](./01-Documents/02.%20Findings%20%26%20Recommendations.md) | Findings, risk ratings, priorities and corrective actions |
+| [Preventive Controls](./01-Documents/03.%20Preventive%20Controls.md) | Recommendations to prevent recurrence |
+| [IT Manager Summary](./01-Documents/04.%20Summary%20for%20the%20IT%20Manager.md) | Key findings, immediate actions and recommendations |
+| [Lab & Testing](./02-Lab/Entra%20ID/) | Entra ID changes, PowerShell scripts and test evidence |
 
 ---
 
-[Job Requirements Map](./Job-Requirements-Map.md) | [Back to IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies) | [GitHub Profile](https://github.com/itsanitarose)
+[Job Requirements Map](./IAM%20Job%20Requirements%20Map.md) | [Back to IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies) | [GitHub Profile](https://github.com/itsanitarose)
