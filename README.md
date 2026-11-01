@@ -73,9 +73,9 @@ The access review is complete. I implemented and tested selected changes in Micr
 
 ## What I Learned
 
-Coming from a different professional background, I brought my existing communication style into this first IAM assignment. As I worked through it, I learned to express my findings using more precise security terminology, including orphaned accounts, dormant accounts, account ownership, deprovisioning and access recertification. It wasn’t about changing how I communicate, but adapting my language to the field.
+Coming from a different professional background, I brought my existing communication style into the first draft of my first IAM ticket. As I reworked it, I learned to express my findings using more precise security terminology, including orphaned accounts, dormant accounts, account ownership, deprovisioning and access recertification. It wasn't about changing how I communicate, but adapting my language to the field.
 
-My thinking shifted too. At first, my approach was purely analytical, focused on spotting accounts that looked wrong. As I worked through the evidence, I started asking sharper questions. Why does this account still have access? Is it actually inappropriate? What information is missing? What could happen if I make the wrong decision?
+My thinking shifted too. At first, my approach was purely analytical, focused on spotting accounts that looked wrong. As I worked through the datasets, I started asking sharper questions. Why does this account still have access? Is it actually inappropriate? What information is missing? What could happen if I make the wrong decision?
 
 As a result, I began to see IAM as more than simply granting or removing access. It's about understanding why access exists in the first place. Security decisions shouldn't be based on technical considerations alone. They also need to account for business operations, avoid unnecessary disruption and maintain security.
 
