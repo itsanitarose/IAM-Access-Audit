@@ -24,19 +24,17 @@ I reviewed seven patient administration portal accounts against HR records, look
 
 **I worked through four questions:**
 
-**01. Does the account match HR records?**  
+**01. Does the account match HR records?**
 I checked employment status, contract end dates and recent activity.
 
-**02. Is the access appropriate?**  
-I reviewed permissions, admin access and shared credentials against job responsibilities.
+**02. Is the access still appropriate?**
+I reviewed permissions, Admin access and shared credentials against job responsibilities.
 
-**03. What needs further investigation?**  
-I checked who owned each account, why it was needed, and who could confirm its access.
+**03. What needs further investigation?**
+I checked who owned each account, why it was needed and who could confirm its access.
 
-**04. What happens next?**  
-I decided what needed attention first, what should change, and how to stop the same issues happening again.
-
-Throughout the review, I separated what the evidence showed from what still needed checking.
+**04. What needed my attention first?**
+I prioritised the risks, recommended what should change and considered how to prevent the same issues happening again.
 
 ---
 
