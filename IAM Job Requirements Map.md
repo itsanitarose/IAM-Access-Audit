@@ -1,28 +1,20 @@
-# IAM Job Requirements Map
+# IAM Skills Map
 
-**Project:** Northwind Health | IAM User Access Review
+**Northwind Health | IAM User Access Review**
 
-## Overview
+This map links IAM Analist job requirements to work completed in this project.
 
-This project was developed by reverse-engineering common requirements found in entry-level and junior Identity and Access Management (IAM) job descriptions.
+| Job Requirement                    | Document                                                                                                                                                                             |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Access reviews and audits          | [Findings & Recommendations](./01-Documents/02.%20Findings%20%26%20Recommendations.md): Compared seven portal accounts against HR records.                                           |
+| Investigate access discrepancies   | [Findings & Recommendations](./01-Documents/02.%20Findings%20%26%20Recommendations.md): Identified post-termination logins, an orphaned Admin account and shared credentials.        |
+| Risk assessment and prioritisation | [Findings & Recommendations](./01-Documents/02.%20Findings%20%26%20Recommendations.md): Assigned severity ratings using an OWASP-informed approach and identified the top priority.  |
+| Least privilege assessment         | [Findings & Recommendations](./01-Documents/02.%20Findings%20%26%20Recommendations.md): Examined Admin permissions against job responsibilities and business need.                   |
+| Prepare audit evidence             | [Source Data](./01-Documents/01.%20Source%20Data.md) · [Findings](./01-Documents/02.%20Findings%20%26%20Recommendations.md): Documented the original records and assessment results. |
+| Identify process gaps              | [Preventive Controls](./01-Documents/03.%20Preventive%20Controls.md): Identified weaknesses in offboarding, account ownership and shared access management.                          |
+| Security reporting                 | [IT Manager Summary](./01-Documents/04.%20Summary%20for%20the%20IT%20Manager.md): Communicated findings, priorities and recommendations to management in a written summary.          |
 
-The matrix below connects industry job requirements to practical project deliverables, demonstrating skills in IAM analysis, access governance, risk assessment, and documentation.
+---
 
-## Skills & Requirements Mapping Matrix
-
-| Industry Job Requirement | Repository Deliverable & Evidence | Demonstrated Skill / Competency |
-|---|---|---|
-| Conduct user access reviews and identify discrepancies. | [02 — User Access Inventory](documents/02-User-Access-Inventory.md): Reconciled HR and portal records for seven accounts and identified access concerns. | User Access Reviews, Access Governance, Analytical Assessment |
-| Support Joiner, Mover and Leaver (JML) processes, including timely deprovisioning. | [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md): Identified post-departure activity. [05 — Remediation and Preventive Controls](documents/05-Remediation-and-Preventive-Controls.md): Recommended HR-triggered offboarding and contractor expiry controls. | Identity Lifecycle Management, JML Risk Identification, Deprovisioning Controls |
-| Monitor privileged access and apply least-privilege principles. | [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md): Assessed Admin access associated with `treyes`, `testadmin` and `dholt`. | Privileged Access Review, Least Privilege, Access Risk Assessment |
-| Support access recertification and governance controls. | [05 — Remediation and Preventive Controls](documents/05-Remediation-and-Preventive-Controls.md): Recommended quarterly reviews, access approval and documented Admin justification. | Access Certification Principles, IAM Governance |
-| Identify IAM security risks, prioritise findings and recommend remediation. | [03 — Access Risk Methodology](documents/03-Access-Risk-Methodology.md): Defined assessment criteria. [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md): Rated seven findings and prioritised `treyes`. | Risk Prioritisation, Evidence-Based Decision-Making, Remediation Planning |
-| Maintain accurate access records and support audit evidence requirements. | [02 — User Access Inventory](documents/02-User-Access-Inventory.md): Documented HR and portal records. [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md): Recorded findings, supporting evidence and proposed actions. | IAM Documentation, Audit Evidence Preparation, Attention to Detail |
-| Investigate identity-related incidents and escalate potential security concerns. | [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md): Recommended investigation of post-departure login activity. No live incident investigation was performed. | Incident Triage Reasoning, Escalation Awareness |
-| Identify weaknesses in shared accounts and access accountability. | [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md): Identified the `support-shared` account and wiki password exposure. [05 — Remediation and Preventive Controls](documents/05-Remediation-and-Preventive-Controls.md): Recommended named accounts and credential rotation. | Account Accountability, Credential Risk Assessment |
-| Collaborate with HR, IT and business stakeholders to validate access requirements. | [04 — Access Findings and Risk Register](documents/04-Access-Findings-and-Risk-Register.md): Identified where contract extensions and business justification required confirmation. | Stakeholder Requirements Analysis, Operational Risk Awareness |
-| Communicate IAM findings clearly to management. | [06 — Executive Summary](documents/06-Executive-Summary.md): Presented key risks, immediate priorities and management recommendations. | Security Reporting, Written Communication, Business-Focused Recommendations |
-| Provision, modify and disable accounts through IAM systems. | Not demonstrated. The project recommends account changes but does not show their execution. | Practical IAM Administration — Not Yet Demonstrated |
-| Administer Active Directory, Microsoft Entra ID, IAM platforms and PowerShell. | Not demonstrated. The project does not include hands-on platform administration or scripting. | Technical IAM Tooling — Not Yet Demonstrated |
-
+[Back to Project Overview](./README.md)
 
