@@ -93,4 +93,4 @@ As a result, I began to see IAM as more than simply granting or removing access.
 
 ---
 
-[Job Requirements Map](./IAM%20Job%20Requirements%20Map.md) | [Back to IAM Case Studies](https://github.com/itsanitarose/IAM-Case-Studies) | [GitHub Profile](https://github.com/itsanitarose)
+[IAM Skills Map](IAM%20Job%20Requirements%20Map.md) | [IAM Case Studies](https://github.com/itsanitarose) | [GitHub Profile](https://github.com/itsanitarose)
